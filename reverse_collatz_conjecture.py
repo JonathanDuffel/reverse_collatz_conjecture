@@ -25,7 +25,7 @@ def any_steps_rev_collatz():
         list.append(single_step_rev_collatz(number))
         print(*list, sep = "\n")
     else:
-        print("Invalid Input 1")
+        print("Invalid Input")
         exit()
 
 def main():
