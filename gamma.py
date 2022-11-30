@@ -1,11 +1,11 @@
-def gamma(n, s):
-    gamma_class = [n]
+def gamma(number, steps):
+    gamma_class = [number]
     
     def gamma_one(number, desired_mod):                             # Returns reverse collatz result
         k = 1
         result = number                                             # Keep n unchanged
         while result % 6 not in desired_mod or result == number:    # Gamma class must not have repeating elements
-            next_gamma = (((2**k)*n)-1)//3                          # Reverse collatz equation
+            result = (((2**k) * number) - 1) // 3                          # Reverse collatz equation
             k += 1                                                  # Incriment k until the result is a desired mod6
         return result
     
