@@ -1,5 +1,5 @@
 def gamma(number, steps):
-    gamma_class = [number]
+    gamma_sequence = [number]
     
     def gamma_one(number, desired_mod):                             # Returns reverse collatz result
         k = 1
@@ -18,8 +18,8 @@ def gamma(number, steps):
             else:
                 number = gamma_one(number, [1,5])                   # Finds next gamma step with n % 6 = 1 or 5
             steps -= 1
-            gamma_class.append(number)                              # Add n to gamma class
-        return gamma_class
+            gamma_sequence.append(number)                           # Add n to gamma class
+        return gamma_sequence
         
     return gamma_any(number, steps)
     
