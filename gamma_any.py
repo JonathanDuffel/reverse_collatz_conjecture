@@ -19,5 +19,5 @@ def gamma_any(number, steps):                                   # Returns gamma 
         gamma_sequence.append(number)                           # Adds number to gamma class
     return gamma_sequence
     
-number, steps = list(map(int, input("Type a odd natural number and steps: ").split()))
+number, steps = list(map(int, input("Type an odd natural number and steps: ").split()))
 print(gamma_any(number, steps))
